@@ -5,7 +5,13 @@ function InfoBox({title, cases, total}) {
     return (
         <Card>
             <CardContent>
-
+                   <Typography color="textSecondary" className="InfoBox__title">
+                       {title}
+                   </Typography>
+                    <h2 className="infoBox__cases"> { cases } </h2>
+                    <Typography className="infoBox__total" color="textPrimary">
+                        {total} Total
+                    </Typography>
             </CardContent>
         </Card>
     )
